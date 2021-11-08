@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Traducciones Wordreference",
+    "description": "Nombre de la extensión"
+  },
+  "extDescription": {
+    "message": "Traduce palabras en Wordreference",
+    "description": "Descripción de la extensión"
+  },
+  "extOptionsTitle": {
+    "message": "Opciones",
+    "description": "Título de la ventana de opciones"
+  }
+}

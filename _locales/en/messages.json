@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Wordreference Translation",
+    "description": "Extension Name"
+  },
+  "extDescription": {
+    "message": "Wordreference Translation",
+    "description": "Extension for Wordreference translations"
+  },
+  "extOptionsTitle": {
+    "message": "Wordreference Translation Options",
+    "description": "Options for Wordreference Translation"
+  }
+}

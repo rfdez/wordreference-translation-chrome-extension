@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "Wordreference",
+  "description": "__MSG_extDescription__",
+  "author": "Raúl Fernández Fernández",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "icons": {
+    "16": "assets/icons/16x16.png",
+    "48": "assets/icons/48x48.png",
+    "128": "assets/icons/128x128.png"
+  },
+  "options_ui": {
+    "page": "components/options/index.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "components/search/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["components/translation/index.js"],
+      "css": ["components/translation/style.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["components/translation/index.html"],
+    "matches": ["https://*/*", "http://*/*"],
+    "use_dynamic_url": true
+  }]
+}
